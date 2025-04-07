@@ -1,0 +1,10 @@
+/venv
+/__pycache__/
+/.env
+bot.logs
+
+app_1.ipynb
+app_2.ipynb
+app_3.ipynb
+app_4.ipynb
+app_5.ipynb

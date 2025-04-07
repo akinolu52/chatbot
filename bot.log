@@ -1,0 +1,74 @@
+2025-04-06 01:07:03,939 - INFO - User: hello | Intent: greeting | Confidence: 0.98 | Entities: {}
+2025-04-06 01:07:15,288 - INFO - User: what is the time | Intent: time | Confidence: 0.98 | Entities: {}
+2025-04-06 01:08:10,394 - INFO - User: what is the current time? | Intent: time | Confidence: 1.00 | Entities: {}
+2025-04-06 01:50:24,184 - INFO - User: what is the time | Intent: time | Confidence: 0.98 | Entities: {}
+2025-04-06 01:54:00,835 - INFO - User: hi | Intent: user_name | Confidence: 0.47 | Entities: {}
+2025-04-06 01:54:11,019 - INFO - User: what is the time? | Intent: time | Confidence: 0.55 | Entities: {}
+2025-04-06 01:55:35,478 - INFO - User: what is the date? | Intent: date | Confidence: 1.00 | Entities: {}
+2025-04-06 01:56:42,585 - INFO - User: okay | Intent: user_name | Confidence: 0.47 | Entities: {}
+2025-04-06 01:57:14,768 - INFO - User: hello | Intent: greeting | Confidence: 0.99 | Entities: {}
+2025-04-06 01:57:53,173 - INFO - User: how're you? | Intent: greeting | Confidence: 0.61 | Entities: {}
+2025-04-06 02:01:00,377 - INFO - User: hello | Intent: greeting | Confidence: 0.99 | Entities: {}
+2025-04-06 02:18:50,101 - INFO - User: hello | Intent: greeting | Confidence: 0.99 | Entities: {}
+2025-04-07 14:13:28,180 - WARNING - Vocabulary size mismatch! rebuilding the model...
+2025-04-07 14:14:28,567 - WARNING - Vocabulary size mismatch! rebuilding the model...
+2025-04-07 14:22:08,692 - INFO - {"timestamp": "2025-04-07T14:22:08.692363", "user_input": "define hello", "intent": "definition", "confidence": 0.8866898888037216, "entities": {}, "context": null}
+2025-04-07 14:22:08,956 - INFO - {"timestamp": "2025-04-07T14:22:08.956038", "user_input": "Show me news about artificial intelligence", "intent": "news", "confidence": 0.9999983073482466, "entities": {}, "context": "definition"}
+2025-04-07 14:22:09,058 - INFO - {"timestamp": "2025-04-07T14:22:09.058209", "user_input": "define joy", "intent": "definition", "confidence": 0.9984601968745934, "entities": {}, "context": "news"}
+2025-04-07 14:22:09,206 - INFO - {"timestamp": "2025-04-07T14:22:09.206462", "user_input": "Translate", "intent": "translate", "confidence": 0.9999981765125276, "entities": {}, "context": "definition"}
+2025-04-07 14:22:09,236 - INFO - {"timestamp": "2025-04-07T14:22:09.236526", "user_input": "How do you say hello in Spanish?", "intent": "translate", "confidence": 0.9999824173132719, "entities": {"location": ["Spanish ?", "in Spanish"]}, "context": "definition"}
+2025-04-07 14:23:31,474 - INFO - {"timestamp": "2025-04-07T14:23:31.474445", "user_input": "What time is it?", "intent": "time", "confidence": 0.9997512014472782, "entities": {}, "context": "definition"}
+2025-04-07 14:23:34,860 - INFO - {"timestamp": "2025-04-07T14:23:34.860835", "user_input": "what is today's date?", "intent": "date", "confidence": 0.9999999887518117, "entities": {}, "context": null}
+2025-04-07 14:23:37,614 - INFO - {"timestamp": "2025-04-07T14:23:37.614218", "user_input": "solve 2 + 2", "intent": "calculator", "confidence": 0.9964656586968935, "entities": {"number": ["2", "2"]}, "context": null}
+2025-04-07 14:23:46,278 - INFO - {"timestamp": "2025-04-07T14:23:46.278458", "user_input": "solve 2 + 2 * 2 - 5", "intent": "calculator", "confidence": 0.9964656586968935, "entities": {"number": ["2", "2", "2", "5"]}, "context": null}
+2025-04-07 14:23:57,832 - INFO - {"timestamp": "2025-04-07T14:23:57.832517", "user_input": "solve (2 + 2) * 2 - 5", "intent": "calculator", "confidence": 0.9964656586968935, "entities": {"number": ["2", "2", "2", "5"]}, "context": null}
+2025-04-07 14:24:03,361 - INFO - {"timestamp": "2025-04-07T14:24:03.361719", "user_input": "What is the weather like in north york?", "intent": "weather", "confidence": 0.9999957860416331, "entities": {"location": ["Like North York", "north york ?", "in north york"]}, "context": null}
+2025-04-07 14:24:03,845 - WARNING - Location not found: Like North York
+2025-04-07 14:28:56,152 - INFO - {"timestamp": "2025-04-07T14:28:56.152894", "user_input": "what is north york weather?", "intent": "weather", "confidence": 0.7146745246457165, "entities": {"location": ["North York"]}, "context": null}
+2025-04-07 14:29:13,034 - INFO - {"timestamp": "2025-04-07T14:29:13.034904", "user_input": "What is the weather like in north york?", "intent": "weather", "confidence": 0.999998516212209, "entities": {"location": ["Like North York", "north york ?", "in north york"]}, "context": null}
+2025-04-07 14:29:13,134 - WARNING - Location not found: Like North York
+2025-04-07 14:29:18,307 - INFO - {"timestamp": "2025-04-07T14:29:18.307362", "user_input": "what is north york weather?", "intent": "weather", "confidence": 0.7146745246457165, "entities": {"location": ["North York"]}, "context": null}
+2025-04-07 15:21:57,704 - INFO - {"timestamp": "2025-04-07T15:21:57.704693", "user_input": "Hello!", "intent": "greeting", "confidence": 0.9980268761073442, "entities": {}, "context": null}
+2025-04-07 15:21:57,710 - INFO - {"timestamp": "2025-04-07T15:21:57.710290", "user_input": "What's the weather in London?", "intent": "weather", "confidence": 0.9922050534691805, "entities": {"location": ["London", "London ?", "in London"]}, "context": null}
+2025-04-07 15:21:57,850 - INFO - {"timestamp": "2025-04-07T15:21:57.850610", "user_input": "Define happiness", "intent": "definition", "confidence": 0.9936362463039372, "entities": {}, "context": null}
+2025-04-07 15:21:58,040 - INFO - {"timestamp": "2025-04-07T15:21:58.040700", "user_input": "Translate hello to Spanish", "intent": "translate", "confidence": 0.9999823269328505, "entities": {}, "context": "definition"}
+2025-04-07 15:21:58,403 - INFO - {"timestamp": "2025-04-07T15:21:58.403909", "user_input": "What time is it?", "intent": "time", "confidence": 0.9996572513915223, "entities": {}, "context": "definition"}
+2025-04-07 15:21:58,404 - INFO - {"timestamp": "2025-04-07T15:21:58.404818", "user_input": "Show me news about AI", "intent": "news", "confidence": 0.9895879592579052, "entities": {}, "context": "definition"}
+2025-04-07 15:25:58,874 - INFO - {"timestamp": "2025-04-07T15:25:58.874302", "user_input": "define hello", "intent": "greeting", "confidence": 0.6359488996211933, "entities": {}, "context": null}
+2025-04-07 15:26:53,876 - INFO - {"timestamp": "2025-04-07T15:26:53.876412", "user_input": "Hello!", "intent": "greeting", "confidence": 0.9412028944755154, "entities": {}, "context": null}
+2025-04-07 15:26:53,882 - INFO - {"timestamp": "2025-04-07T15:26:53.882054", "user_input": "What's the weather in London?", "intent": "weather", "confidence": 0.9620635908334436, "entities": {"location": ["London", "London ?", "in London"]}, "context": null}
+2025-04-07 15:26:53,950 - INFO - {"timestamp": "2025-04-07T15:26:53.950837", "user_input": "Define happiness", "intent": "definition", "confidence": 0.9950034238097677, "entities": {}, "context": null}
+2025-04-07 15:26:54,175 - INFO - {"timestamp": "2025-04-07T15:26:54.175779", "user_input": "What time is it?", "intent": "time", "confidence": 0.9993051321532384, "entities": {}, "context": "definition"}
+2025-04-07 15:26:54,357 - INFO - {"timestamp": "2025-04-07T15:26:54.357403", "user_input": "Hello!", "intent": "greeting", "confidence": 0.9412028944755154, "entities": {}, "context": null}
+2025-04-07 15:26:54,358 - INFO - {"timestamp": "2025-04-07T15:26:54.358510", "user_input": "What's the weather in London?", "intent": "weather", "confidence": 0.9620635908334436, "entities": {"location": ["London", "London ?", "in London"]}, "context": null}
+2025-04-07 15:26:54,462 - INFO - {"timestamp": "2025-04-07T15:26:54.462830", "user_input": "Define happiness", "intent": "definition", "confidence": 0.9950034238097677, "entities": {}, "context": null}
+2025-04-07 15:26:54,537 - INFO - {"timestamp": "2025-04-07T15:26:54.537071", "user_input": "Translate hello to Spanish", "intent": "translate", "confidence": 0.9998372047540983, "entities": {}, "context": "definition"}
+2025-04-07 15:26:54,873 - INFO - {"timestamp": "2025-04-07T15:26:54.873437", "user_input": "What time is it?", "intent": "time", "confidence": 0.9993051321532384, "entities": {}, "context": "definition"}
+2025-04-07 15:26:54,879 - INFO - {"timestamp": "2025-04-07T15:26:54.879660", "user_input": "Show me news about AI", "intent": "news", "confidence": 0.9997041869574216, "entities": {}, "context": "definition"}
+2025-04-07 15:26:55,102 - INFO - {"timestamp": "2025-04-07T15:26:55.102804", "user_input": "define hello", "intent": "definition", "confidence": 0.7775130980891071, "entities": {}, "context": "news"}
+2025-04-07 15:26:55,544 - INFO - {"timestamp": "2025-04-07T15:26:55.543971", "user_input": "Show me news about artificial intelligence", "intent": "news", "confidence": 0.9997041869574216, "entities": {}, "context": "definition"}
+2025-04-07 15:26:55,750 - INFO - {"timestamp": "2025-04-07T15:26:55.750885", "user_input": "define joy", "intent": "definition", "confidence": 0.9950034238097677, "entities": {}, "context": "news"}
+2025-04-07 15:26:55,824 - INFO - {"timestamp": "2025-04-07T15:26:55.823995", "user_input": "Translate", "intent": "translate", "confidence": 0.9999140458413598, "entities": {}, "context": "definition"}
+2025-04-07 15:26:55,838 - INFO - {"timestamp": "2025-04-07T15:26:55.838313", "user_input": "How do you say hello in Spanish?", "intent": "translate", "confidence": 0.9994561694584085, "entities": {"location": ["Spanish ?", "in Spanish"]}, "context": "definition"}
+2025-04-07 15:26:56,271 - INFO - {"timestamp": "2025-04-07T15:26:56.271944", "user_input": "what is north york weather?", "intent": "weather", "confidence": 0.9620635908334436, "entities": {"location": ["North York"]}, "context": "definition"}
+2025-04-07 15:26:56,419 - INFO - {"timestamp": "2025-04-07T15:26:56.419407", "user_input": "What time is it?", "intent": "time", "confidence": 0.9993051321532384, "entities": {}, "context": null}
+2025-04-07 15:26:56,479 - INFO - {"timestamp": "2025-04-07T15:26:56.479391", "user_input": "what is today's date?", "intent": "date", "confidence": 0.9999999947023526, "entities": {}, "context": null}
+2025-04-07 15:26:56,496 - INFO - {"timestamp": "2025-04-07T15:26:56.496832", "user_input": "solve (2 + 2) * 2 - 5", "intent": "calculator", "confidence": 0.9856540920457405, "entities": {"number": ["2", "2", "2", "5"]}, "context": null}
+2025-04-07 15:26:56,515 - INFO - {"timestamp": "2025-04-07T15:26:56.515249", "user_input": "What is the weather like in north york?", "intent": "weather", "confidence": 0.9999942604849478, "entities": {"location": ["Like North York", "north york ?", "in north york"]}, "context": null}
+2025-04-07 15:26:56,832 - WARNING - Location not found: Like North York
+2025-04-07 15:26:56,838 - INFO - {"timestamp": "2025-04-07T15:26:56.838829", "user_input": "Hello, how are you?", "intent": "greeting", "confidence": 0.9412028944755154, "entities": {}, "context": null}
+2025-04-07 15:26:56,864 - INFO - {"timestamp": "2025-04-07T15:26:56.864561", "user_input": "What is the weather like in north york?", "intent": "weather", "confidence": 0.9999942604849478, "entities": {"location": ["Like North York", "north york ?", "in north york"]}, "context": null}
+2025-04-07 15:26:56,962 - WARNING - Location not found: Like North York
+2025-04-07 15:26:56,976 - INFO - {"timestamp": "2025-04-07T15:26:56.976758", "user_input": "what is north york weather?", "intent": "weather", "confidence": 0.9620635908334436, "entities": {"location": ["North York"]}, "context": null}
+2025-04-07 15:35:36,198 - INFO - {"timestamp": "2025-04-07T15:35:36.198037", "user_input": "Hello!", "intent": "greeting", "confidence": 0.9711291529544543, "entities": {}, "context": null}
+2025-04-07 15:35:36,231 - INFO - {"timestamp": "2025-04-07T15:35:36.231840", "user_input": "What's the weather in London?", "intent": "weather", "confidence": 0.994965047258259, "entities": {"location": ["London", "London ?", "in London"]}, "context": null}
+2025-04-07 15:35:36,461 - INFO - {"timestamp": "2025-04-07T15:35:36.461521", "user_input": "Define happiness", "intent": "definition", "confidence": 0.9999070098622211, "entities": {}, "context": null}
+2025-04-07 15:35:36,878 - INFO - {"timestamp": "2025-04-07T15:35:36.878373", "user_input": "What time is it?", "intent": "time", "confidence": 0.9999886197596448, "entities": {}, "context": "definition"}
+2025-04-07 15:35:50,441 - INFO - {"timestamp": "2025-04-07T15:35:50.441339", "user_input": "Hello!", "intent": "greeting", "confidence": 0.9711291529544543, "entities": {}, "context": null}
+2025-04-07 15:35:50,499 - INFO - {"timestamp": "2025-04-07T15:35:50.499167", "user_input": "What's the weather in London?", "intent": "weather", "confidence": 0.994965047258259, "entities": {"location": ["London", "London ?", "in London"]}, "context": null}
+2025-04-07 15:35:50,596 - INFO - {"timestamp": "2025-04-07T15:35:50.596630", "user_input": "Define happiness", "intent": "definition", "confidence": 0.9999070098622211, "entities": {}, "context": null}
+2025-04-07 15:35:50,752 - INFO - {"timestamp": "2025-04-07T15:35:50.752028", "user_input": "Translate hello to Spanish", "intent": "translate", "confidence": 0.9997394402083213, "entities": {}, "context": "definition"}
+2025-04-07 15:35:51,131 - INFO - {"timestamp": "2025-04-07T15:35:51.131717", "user_input": "What time is it?", "intent": "time", "confidence": 0.9999886197596448, "entities": {}, "context": "definition"}
+2025-04-07 15:35:51,133 - INFO - {"timestamp": "2025-04-07T15:35:51.133065", "user_input": "Show me news about AI", "intent": "news", "confidence": 0.9991955760087696, "entities": {}, "context": "definition"}
+2025-04-07 15:36:00,146 - INFO - {"timestamp": "2025-04-07T15:36:00.144007", "user_input": "what is north york weather?", "intent": "weather", "confidence": 0.994965047258259, "entities": {"location": ["North York"]}, "context": "news"}
+2025-04-07 15:38:51,893 - INFO - {"timestamp": "2025-04-07T15:38:51.891866", "user_input": "hello", "intent": "greeting", "confidence": 0.9630670056380972, "entities": {}, "context": null}

@@ -1,0 +1,658 @@
+{
+    "product_info": {
+        "patterns": [
+            "Tell me about your products",
+            "What items do you sell?",
+            "Show me your catalog",
+            "What products are available?",
+            "I want to see your offerings",
+            "What do you have in stock?",
+            "Can you list your products?",
+            "What can I buy from you?",
+            "Show me what you offer",
+            "What's in your inventory?"
+        ],
+        "responses": [
+            "We offer a wide range of products including electronics, clothing, and home goods.",
+            "Our catalog includes tech gadgets, fashion items, and household products.",
+            "You can browse our products in these categories: electronics, apparel, and home.",
+            "We currently have special deals on smartphones and laptops.",
+            "Our inventory includes the latest tech products and trendy fashion items."
+        ],
+        "context": ""
+    },
+    "order_status": {
+        "patterns": [
+            "Where is my order?",
+            "What's the status of my purchase?",
+            "Has my order shipped yet?",
+            "When will I receive my package?",
+            "Can you check my order status?",
+            "Tracking number for my order",
+            "Is my item on the way?",
+            "How long until delivery?",
+            "Order delivery estimate",
+            "Status update on my purchase"
+        ],
+        "responses": [
+            "Please provide your order number and I'll check the status.",
+            "I can look up your order status if you give me the order ID.",
+            "Your package is expected to arrive within 3-5 business days.",
+            "Let me check the shipping status for you.",
+            "I'll need your order reference to check the delivery status."
+        ]
+    },
+    "store_hours": {
+        "patterns": [
+            "When are you open?",
+            "What are your business hours?",
+            "What time do you close?",
+            "Are you open on weekends?",
+            "When do you open tomorrow?",
+            "What are your operating hours?",
+            "Do you open late on Fridays?",
+            "What days are you closed?",
+            "Hours of operation",
+            "When can I visit your store?"
+        ],
+        "responses": [
+            "We're open Monday-Friday 9am-9pm, Saturday 10am-8pm, and Sunday 11am-6pm.",
+            "Our hours are 9am to 9pm weekdays, with reduced hours on weekends.",
+            "You can visit us from 9am to 9pm most days, except Sundays when we close at 6pm.",
+            "We're open every day except major holidays.",
+            "Current operating hours: Weekdays 9-9, Saturday 10-8, Sunday 11-6."
+        ]
+    },
+    "returns": {
+        "patterns": [
+            "How do I return an item?",
+            "What's your return policy?",
+            "Can I get a refund?",
+            "How long do I have to return something?",
+            "What if I want to exchange an item?",
+            "Return process for online orders",
+            "Do you accept returns?",
+            "How to send back a defective product",
+            "Return shipping instructions",
+            "Money back guarantee"
+        ],
+        "responses": [
+            "You can return items within 30 days with original receipt.",
+            "Our return policy allows exchanges within 14 days of purchase.",
+            "Please bring the item with original packaging to any store for returns.",
+            "Online returns can be initiated through your account page.",
+            "Refunds are processed within 5-7 business days after we receive the return."
+        ]
+    },
+    "appointment": {
+        "patterns": [
+            "I need to schedule an appointment",
+            "Can I book a consultation?",
+            "How do I make an appointment?",
+            "Need to schedule a meeting",
+            "Book a time to come in",
+            "Set up a service appointment",
+            "Make a reservation",
+            "Schedule a demo",
+            "Arrange a visit",
+            "Book an available slot"
+        ],
+        "responses": [
+            "What day and time would you like to schedule your appointment?",
+            "I can help you book an appointment. When are you available?",
+            "Please tell me your preferred date and time for the appointment.",
+            "We have openings next week. What day works for you?",
+            "Would you like morning or afternoon for your appointment?"
+        ]
+    },
+    "payment": {
+        "patterns": [
+            "What payment methods do you accept?",
+            "Can I pay with PayPal?",
+            "Do you take credit cards?",
+            "Payment options available",
+            "Is cash accepted?",
+            "What forms of payment do you allow?",
+            "Can I use Apple Pay?",
+            "Do you accept cryptocurrency?",
+            "Payment upon delivery?",
+            "Installment payment options"
+        ],
+        "responses": [
+            "We accept Visa, Mastercard, American Express, and PayPal.",
+            "You can pay with all major credit cards or digital wallets.",
+            "We accept cash, credit, and mobile payment options.",
+            "Payment methods include credit cards, bank transfer, and PayPal.",
+            "For online orders, we accept most major credit cards and PayPal."
+        ]
+    },
+    "greeting": {
+        "patterns": [
+            "Hi",
+            "Hello",
+            "Hey",
+            "Good morning",
+            "What's up?",
+            "How's it going?",
+            "How're you doing",
+            "Howdy",
+            "Greetings",
+            "Yo",
+            "Hi there"
+        ],
+        "responses": [
+            "Hello! How can I help you today?",
+            "Hi there! What can I do for you?",
+            "Greetings! How may I assist you?",
+            "Hey! How can I help?",
+            "Good to see you! What brings you here today?"
+        ]
+    },
+    "farewell": {
+        "patterns": [
+            "Bye",
+            "See you",
+            "Goodbye",
+            "Later",
+            "Take care",
+            "Catch you later",
+            "Good night",
+            "I'm off",
+            "Have a nice day",
+            "Until next time"
+        ],
+        "responses": [
+            "See you later!",
+            "Catch you later!",
+            "Goodbye! Have a great day!",
+            "Farewell! Come back soon.",
+            "Take care! Hope to chat again soon.",
+            "Bye for now! Feel free to return if you need anything else."
+        ]
+    },
+    "time": {
+        "patterns": [
+            "What time is it?",
+            "Tell me the time",
+            "What's the current time?",
+            "Can you tell the time?",
+            "What's the hour?",
+            "Current time please",
+            "Got the time?",
+            "Check the time for me",
+            "Time check",
+            "What's your watch say?"
+        ],
+        "responses": [
+            "The current time is {time}.",
+            "It's currently {time}.",
+            "Right now it's {time}.",
+            "My clock shows {time}."
+        ]
+    },
+    "date": {
+        "patterns": [
+            "What's today's date?",
+            "What date is it?",
+            "Tell me the date",
+            "What's the date today?",
+            "What day is it?",
+            "What's the current date?",
+            "Today's date please",
+            "Give me today's date",
+            "What's the date?",
+            "Current date"
+        ],
+        "responses": [
+            "Today is {date}.",
+            "The current date is {date}.",
+            "It's {date} today.",
+            "Today's date is {date}."
+        ]
+    },
+    "thanks": {
+        "patterns": [
+            "Thanks",
+            "Thank you",
+            "Much appreciated",
+            "Thanks a lot",
+            "I appreciate it",
+            "Thanks a bunch"
+        ],
+        "responses": [
+            "You're welcome!",
+            "No problem!",
+            "Anytime!",
+            "Happy to help!",
+            "Glad I could assist.",
+            "My pleasure!"
+        ]
+    },
+    "news": {
+        "patterns": [
+            "Show me news about",
+            "Latest news on",
+            "What's new about",
+            "News about",
+            "Recent articles on",
+            "Tell me about",
+            "Find news on",
+            "Get updates about",
+            "What's happening with",
+            "Search news for"
+        ],
+        "responses": [
+            "Here are the latest news articles about {topic}:",
+            "I found these news stories about {topic}:",
+            "Recent updates about {topic}:"
+        ],
+        "context": "news"
+    },
+    "question": {
+        "patterns": [
+            "How are you?",
+            "What's up?",
+            "How's everything?",
+            "How's it going?",
+            "How do you feel?",
+            "What's new?"
+        ],
+        "responses": [
+            "I'm doing great, thanks for asking!",
+            "I'm just a chatbot, but I'm good!",
+            "All systems go!",
+            "Everything is going well, how about you?",
+            "Feeling optimized, thanks!"
+        ]
+    },
+    "help": {
+        "patterns": [
+            "Can you help me?",
+            "I need help",
+            "Help me",
+            "I have a question",
+            "Can you assist me?",
+            "Can you guide me?"
+        ],
+        "responses": [
+            "Sure! What can I help you with?",
+            "I'm here to assist. What do you need help with?",
+            "Of course! Let me know how I can assist you.",
+            "I'm at your service! What do you need?"
+        ]
+    },
+    "capabilities": {
+        "patterns": [
+            "What can you do?",
+            "How can you help me?",
+            "Tell me your capabilities",
+            "What are your features?",
+            "What are you capable of?",
+            "What functions do you have?",
+            "Help options",
+            "What do you do?",
+            "How do I use you?",
+            "Show me what you can do"
+        ],
+        "responses": [
+            "I can help with answering questions, providing information, telling jokes, and assisting with various tasks. What would you like help with?",
+            "My capabilities include answering questions, casual conversation, providing information, and assisting with tasks you need help with.",
+            "I'm designed to be a helpful assistant. I can chat, answer questions, provide information, and help with simple tasks."
+        ]
+    },
+    "joke": {
+        "patterns": [
+            "Tell me a joke",
+            "Make me laugh",
+            "Tell me something funny",
+            "Got any jokes?",
+            "Lighten the mood"
+        ],
+        "responses": [
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "Why don't eggs tell jokes? They'd crack each other up!",
+            "What do you call fake spaghetti? An impasta!",
+            "I told my computer I needed a break, now it won’t stop sending me Kit-Kats."
+        ]
+    },
+    "weather": {
+        "patterns": [
+            "What's the weather like?",
+            "Is it going to rain today?",
+            "How's the weather?",
+            "Is it sunny outside?",
+            "What's the forecast?",
+            "Will it snow?",
+            "What's the temperature?",
+            "Is it hot outside?",
+            "Is it cold today?",
+            "Do I need an umbrella?",
+            "what's the weather in {location}",
+            "how's weather in {location}",
+            "{location} weather",
+            "weather {location}",
+            "what is {location} weather",
+            "tell me {location} weather",
+            "how's the weather at {location}",
+            "forecast for {location}",
+            "weather report for {location}",
+            "temperature in {location}"
+        ],
+        "responses": [
+            "The weather in {location} is {description} with humidity of {humidity}, wind speed of {wind} and a temperature of {temp}°C.",
+            "Currently in {location}: {description}, with humidity of {humidity}, wind speed of {wind} and the temperature is {temp}°C.",
+            "Forecast for {location}: {description}, with humidity of {humidity}, wind speed of {wind} and temperature of {temp}°C."
+        ],
+        "context_set": "weather",
+        "entities": [
+            "location"
+        ]
+    },
+    "age": {
+        "patterns": [
+            "How old are you?",
+            "What's your age?",
+            "How long have you been around?",
+            "When were you created?",
+            "How many years old are you?"
+        ],
+        "responses": [
+            "I'm timeless! I don't age.",
+            "I was created recently, but I don't keep track of years.",
+            "I don't age, I'm forever in my prime!",
+            "I'm ageless—like the internet itself!"
+        ]
+    },
+    "name": {
+        "patterns": [
+            "What’s your name?",
+            "Who are you?",
+            "Can you tell me your name?",
+            "What should I call you?"
+        ],
+        "responses": [
+            "I'm your chatbot assistant, but you can call me whatever you like!",
+            "I don't have a personal name, but you can call me Chatbot.",
+            "My name is not important, but I'm here to help you with whatever you need!"
+        ]
+    },
+    "user_name": {
+        "patterns": [
+            "My name is",
+            "I am",
+            "Call me",
+            "I'm called",
+            "My friends call me",
+            "Name's",
+            "I go by",
+            "They call me",
+            "It's",
+            "The name is"
+        ],
+        "responses": [
+            "Nice to meet you, {name}!",
+            "Hello, {name}! How can I help you today?",
+            "Great to meet you, {name}. What can I do for you?",
+            "Thanks for introducing yourself, {name}. How may I assist you?"
+        ]
+    },
+    "compliment": {
+        "patterns": [
+            "You're awesome",
+            "You're amazing",
+            "You're great",
+            "I like you",
+            "You're cool"
+        ],
+        "responses": [
+            "Aw, thanks! You're awesome too!",
+            "You're pretty great yourself!",
+            "Thanks for the kind words!",
+            "You're making my circuits blush!"
+        ]
+    },
+    "quote": {
+        "patterns": [
+            "Give me a quote",
+            "Tell me something inspirational",
+            "I need some motivation",
+            "Give me a wise quote",
+            "Can you share a quote?"
+        ],
+        "responses": [
+            "“The only way to do great work is to love what you do.” – Steve Jobs",
+            "“Be yourself; everyone else is already taken.” – Oscar Wilde",
+            "“In the end, we will remember not the words of our enemies, but the silence of our friends.” – Martin Luther King Jr.",
+            "“It always seems impossible until it’s done.” – Nelson Mandela"
+        ]
+    },
+    "quote_funny": {
+        "patterns": [
+            "Tell me a funny quote",
+            "Make me laugh with a quote",
+            "Share a humorous quote",
+            "Got any funny sayings?",
+            "Give me a laugh with a quote"
+        ],
+        "responses": [
+            "“I am on a seafood diet. I see food, and I eat it.” – Unknown",
+            "“Behind every great man is a woman rolling her eyes.” – Jim Carrey",
+            "“I used to think I was indecisive, but now I’m not too sure.” – Unknown",
+            "“I didn’t fail the test. I just found 100 ways to do it wrong.” – Benjamin Franklin"
+        ]
+    },
+    "fallback": {
+        "patterns": [
+            "I don't understand",
+            "Can you explain that?",
+            "What do you mean?",
+            "I didn't get that",
+            "Can you rephrase?"
+        ],
+        "responses": [
+            "I'm sorry, I didn't quite catch that. Can you rephrase?",
+            "Could you please clarify what you mean?",
+            "I didn't understand that. Can you explain it differently?",
+            "I'm not sure I follow. Can you elaborate?",
+            "I'm not sure I understand. Could you rephrase that?",
+            "I didn't quite get that. Can you explain differently?",
+            "I'm still learning. Could you ask me something else?"
+        ]
+    },
+    "search": {
+        "patterns": [
+            "Find information on",
+            "Search for",
+            "Look up",
+            "I want to know about",
+            "Can you find",
+            "Tell me about",
+            "Search",
+            "Find",
+            "Information on",
+            "Details about"
+        ],
+        "responses": [
+            "I'd be happy to help you search for information about {topic}.",
+            "Let me find some information about {topic} for you.",
+            "I'll help you look up details about {topic}."
+        ]
+    },
+    "schedule_meeting": {
+        "patterns": [
+            "Schedule a meeting",
+            "Book an appointment",
+            "Set up a call",
+            "Arrange a meeting",
+            "Plan a meetup",
+            "Book a meeting room",
+            "Create calendar event",
+            "Add to my schedule",
+            "Meeting planning",
+            "Set an appointment"
+        ],
+        "responses": [
+            "I can help you schedule a meeting. When would you like it to take place?",
+            "Sure, I can assist with scheduling. What date and time works for you?",
+            "I'd be happy to help book your meeting. Could you provide the date, time, and participants?"
+        ]
+    },
+    "reminder": {
+        "patterns": [
+            "Remind me to",
+            "Set a reminder",
+            "Don't let me forget",
+            "I need to remember",
+            "Can you remind me",
+            "Alert me when",
+            "Notification for",
+            "Ping me about",
+            "Remember to",
+            "Set an alarm"
+        ],
+        "responses": [
+            "I'll set a reminder for you to {task}.",
+            "Sure, I'll remind you to {task}. When would you like to be reminded?",
+            "I can help you remember to {task}. What time should I remind you?"
+        ]
+    },
+    "calculator": {
+        "patterns": [
+            "Calculate",
+            "What's",
+            "Solve",
+            "Compute",
+            "Math problem",
+            "Arithmetic",
+            "Add",
+            "Subtract",
+            "Multiply",
+            "Divide"
+        ],
+        "responses": [
+            "Let me calculate that for you.",
+            "Here's the result of your calculation: {result}",
+            "The answer is {result}."
+        ]
+    },
+    "definition": {
+        "patterns": [
+            "Define",
+            "Define {term}",
+            "What is the meaning of",
+            "What does mean",
+            "Explain the term",
+            "Give me a definition",
+            "Meaning of",
+            "What's the definition",
+            "Describe the term",
+            "What is",
+            "Explain what is",
+            "Dictionary definition of",
+            "Define the word",
+            "Tell me about the word",
+            "What's meant by"
+        ],
+        "responses": [
+            "Here's what I found about '{term}':\n",
+            "Definition of '{term}':\n",
+            "Here's the dictionary information for '{term}':\n"
+        ],
+        "context": "definition"
+    },
+    "recommend": {
+        "patterns": [
+            "Recommend",
+            "Suggest",
+            "What's good for",
+            "I need ideas for",
+            "Can you recommend",
+            "Give me suggestions",
+            "What do you suggest",
+            "Ideas for",
+            "Best options for",
+            "Top picks for"
+        ],
+        "responses": [
+            "I'd be happy to recommend some options for {topic}.",
+            "Here are some suggestions for {topic}: {suggestions}",
+            "Based on popular choices, I'd recommend {suggestions} for {topic}."
+        ]
+    },
+    "price": {
+        "patterns": [
+            "How much does it cost",
+            "Price of",
+            "How much is",
+            "What's the price",
+            "Cost of",
+            "Pricing for",
+            "Costs",
+            "Price check",
+            "How expensive",
+            "Price range"
+        ],
+        "responses": [
+            "I don't have real-time pricing information, but I can help you find where to check prices for {item}.",
+            "Prices for {item} can vary. I'd recommend checking a relevant website or store for the most current pricing.",
+            "I don't have access to current pricing for {item}, but I can help you find resources to check."
+        ]
+    },
+    "translate": {
+        "patterns": [
+            "Translate",
+            "How do you say",
+            "In French",
+            "In Spanish",
+            "In German",
+            "In Japanese",
+            "In Italian",
+            "In Chinese",
+            "In Russian",
+            "In Portuguese",
+            "In Hindi",
+            "In Arabic",
+            "In Korean",
+            "In Dutch",
+            "In Swedish",
+            "In Turkish",
+            "In Greek",
+            "In Polish",
+            "In Thai",
+            "In Vietnamese",
+            "In Filipino",
+            "In Malay",
+            "In Indonesian",
+            "In Bengali",
+            "In Urdu",
+            "In Persian",
+            "In Hebrew",
+            "In Finnish",
+            "In Danish",
+            "In Norwegian",
+            "In Czech",
+            "In Hungarian",
+            "In Romanian",
+            "In Bulgarian",
+            "In Ukrainian",
+            "In Slovak",
+            "In Croatian",
+            "In Serbian",
+            "In Slovenian",
+            "Translate to",
+            "Translate from",
+            "What is the translation of",
+            "How to say in",
+            "What does it mean in",
+            "Translate this",
+            "Translate that",
+            "Translate for me",
+            "Translate into"
+        ],
+        "responses": [
+            "I can help with basic translations. What would you like me to translate?",
+            "I'd be happy to assist with translation. What phrase and which language?",
+            "I can translate simple phrases. What do you need translated and to which language?"
+        ]
+    }
+}
