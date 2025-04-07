@@ -1,38 +1,38 @@
+import os
 import time
+import uuid
 
 import pandas as pd
 import streamlit as st
 from app import EnhancedChatbot
-import uuid
-import os
 
 title = "Netwiz AI Chatbot"
 
 # Streamlit UI
 st.set_page_config(page_title=title, page_icon="🤖")
 
-# Custom CSS for better styling
-st.html("""
-<style>
-    .stChatMessage {
-        # width: 48%;
-        background-color: rgba(38, 39, 48, 0.5);
-    }
-    [class*="st-key-assistant"] div[data-testid="stChatMessageContent"] div[data-testid="stCaptionContainer"] {
-        margin-top: -1rem;
-        text-align: right;
-        margin-right: 1rem;
-    }
-    [class*="st-key-user"] {
-        width: 48%;
-        align-self: flex-end;
-    }
-    [class*="st-key-assistant"] {
-        width: 48%;
-        align-self: flex-start
-    }
-</style>
-""")
+# # Custom CSS for better styling
+# st.html("""
+# <style>
+#     .stChatMessage {
+#         # width: 48%;
+#         background-color: rgba(38, 39, 48, 0.5);
+#     }
+#     [class*="st-key-assistant"] div[data-testid="stChatMessageContent"] div[data-testid="stCaptionContainer"] {
+#         margin-top: -1rem;
+#         text-align: right;
+#         margin-right: 1rem;
+#     }
+#     [class*="st-key-user"] {
+#         width: 48%;
+#         align-self: flex-end;
+#     }
+#     [class*="st-key-assistant"] {
+#         width: 48%;
+#         align-self: flex-start
+#     }
+# </style>
+# """)
 
 def chat_message(name):
     return st.container(key=f"{name}-{uuid.uuid4()}").chat_message(name=name)
@@ -71,9 +71,11 @@ def main():
             st.experimental_rerun()
 
         if st.checkbox("Show Conversation History"):
-            history_df = pd.DataFrame(st.session_state.chatbot.conversation_history)
+            history_df = pd.DataFrame(
+                st.session_state.chatbot.conversation_history)
             if not history_df.empty:
-                st.dataframe(history_df[['timestamp', 'user_input', 'intent', 'confidence']])
+                st.dataframe(
+                    history_df[['timestamp', 'user_input', 'intent', 'confidence']])
 
             # st.write(pd.DataFrame(st.session_state.chatbot.conversation_history))
 
@@ -83,8 +85,8 @@ def main():
             # st.dataframe(metrics_df)
             # st.line_chart(metrics_df.drop(columns=['timestamp']))
             st.dataframe(metrics_df.drop(columns=['timestamp']))
-            st.line_chart(metrics_df[['accuracy', 'precision', 'recall', 'f1_score']])
-
+            st.line_chart(
+                metrics_df[['accuracy', 'precision', 'recall', 'f1_score']])
 
     # Main chat interface
     st.title(f"{title} 🤖")

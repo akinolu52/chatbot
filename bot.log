@@ -79,3 +79,7 @@
 2025-04-07 16:26:42,363 - INFO - {"timestamp": "2025-04-07T16:26:42.362909", "user_input": "what is the weather in toronto?", "intent": "weather", "confidence": 0.9932019238708867, "entities": {"location": ["Toronto", "toronto ?", "in toronto"]}, "context": null}
 2025-04-07 16:27:01,005 - INFO - {"timestamp": "2025-04-07T16:27:01.005567", "user_input": "what is the weather in canada", "intent": "weather", "confidence": 0.9932019238708867, "entities": {"location": ["Canada", "canada", "in canada"]}, "context": null}
 2025-04-07 16:27:15,049 - INFO - {"timestamp": "2025-04-07T16:27:15.049688", "user_input": "define truth", "intent": "definition", "confidence": 0.9965655817469015, "entities": {}, "context": null}
+2025-04-07 16:32:50,184 - INFO - {"timestamp": "2025-04-07T16:32:50.184062", "user_input": "hello", "intent": "greeting", "confidence": 0.9984676032476305, "entities": {}, "context": null}
+2025-04-07 16:32:53,504 - INFO - {"timestamp": "2025-04-07T16:32:53.504581", "user_input": "hello", "intent": "greeting", "confidence": 0.9984676032476305, "entities": {}, "context": null}
+2025-04-07 16:33:01,373 - INFO - {"timestamp": "2025-04-07T16:33:01.373314", "user_input": "hello", "intent": "greeting", "confidence": 0.9984676032476305, "entities": {}, "context": null}
+2025-04-07 16:40:26,598 - INFO - {"timestamp": "2025-04-07T16:40:26.598669", "user_input": "hello", "intent": "greeting", "confidence": 0.9984676032476305, "entities": {}, "context": null}
