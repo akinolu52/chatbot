@@ -11,29 +11,6 @@ title = "Netwiz AI Chatbot"
 # Streamlit UI
 st.set_page_config(page_title=title, page_icon="🤖")
 
-# # Custom CSS for better styling
-# st.html("""
-# <style>
-#     .stChatMessage {
-#         # width: 48%;
-#         background-color: rgba(38, 39, 48, 0.5);
-#     }
-#     [class*="st-key-assistant"] div[data-testid="stChatMessageContent"] div[data-testid="stCaptionContainer"] {
-#         margin-top: -1rem;
-#         text-align: right;
-#         margin-right: 1rem;
-#     }
-#     [class*="st-key-user"] {
-#         width: 48%;
-#         align-self: flex-end;
-#     }
-#     [class*="st-key-assistant"] {
-#         width: 48%;
-#         align-self: flex-start
-#     }
-# </style>
-# """)
-
 def chat_message(name):
     return st.container(key=f"{name}-{uuid.uuid4()}").chat_message(name=name)
 
@@ -131,7 +108,8 @@ Welcome to your personal AI assistant! I can help with:
 
         # Add assistant response to chat history
         st.session_state.messages.append(
-            {"role": "assistant", "content": response})
+            {"role": "assistant", "content": response}
+        )
 
 
 if __name__ == "__main__":
