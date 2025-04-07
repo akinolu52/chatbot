@@ -60,8 +60,9 @@ def main():
 
         if st.button("Retrain Model"):
             with st.spinner("Training model..."):
-                losses = st.session_state.chatbot.train_model()
-                st.line_chart(losses)
+                losses = st.session_state.chatbot.train_model(epochs=50)
+                # st.line_chart(losses)
+                st.line_chart(pd.DataFrame(losses, columns=['Loss']))
                 st.success("Model retrained successfully!")
 
         if st.button("Clear Conversation"):
@@ -70,23 +71,32 @@ def main():
             st.experimental_rerun()
 
         if st.checkbox("Show Conversation History"):
-            st.write(pd.DataFrame(st.session_state.chatbot.conversation_history))
+            history_df = pd.DataFrame(st.session_state.chatbot.conversation_history)
+            if not history_df.empty:
+                st.dataframe(history_df[['timestamp', 'user_input', 'intent', 'confidence']])
+
+            # st.write(pd.DataFrame(st.session_state.chatbot.conversation_history))
 
         if st.checkbox("Show Model Metrics") and st.session_state.chatbot.test_results:
             metrics_df = pd.DataFrame(st.session_state.chatbot.test_results)
             st.write("Model Performance Metrics")
-            st.dataframe(metrics_df)
-            st.line_chart(metrics_df.drop(columns=['timestamp']))
+            # st.dataframe(metrics_df)
+            # st.line_chart(metrics_df.drop(columns=['timestamp']))
+            st.dataframe(metrics_df.drop(columns=['timestamp']))
+            st.line_chart(metrics_df[['accuracy', 'precision', 'recall', 'f1_score']])
+
 
     # Main chat interface
     st.title(f"{title} 🤖")
     # st.write("Ask me anything! I can help with various topics.")
     st.markdown("""
-Welcome to your personal AI assistant! Ask me anything about:
-- Greetings 
-- Questions
-- Jokes
-- Weather
+Welcome to your personal AI assistant! I can help with:
+- Weather information
+- Time and date
+- News updates
+- Translations
+- Dictionary definitions
+- Basic calculations
 - And more!
 """)
 

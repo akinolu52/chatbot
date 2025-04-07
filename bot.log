@@ -72,3 +72,10 @@
 2025-04-07 15:35:51,133 - INFO - {"timestamp": "2025-04-07T15:35:51.133065", "user_input": "Show me news about AI", "intent": "news", "confidence": 0.9991955760087696, "entities": {}, "context": "definition"}
 2025-04-07 15:36:00,146 - INFO - {"timestamp": "2025-04-07T15:36:00.144007", "user_input": "what is north york weather?", "intent": "weather", "confidence": 0.994965047258259, "entities": {"location": ["North York"]}, "context": "news"}
 2025-04-07 15:38:51,893 - INFO - {"timestamp": "2025-04-07T15:38:51.891866", "user_input": "hello", "intent": "greeting", "confidence": 0.9630670056380972, "entities": {}, "context": null}
+2025-04-07 16:24:47,515 - INFO - {"timestamp": "2025-04-07T16:24:47.515541", "user_input": "hi", "intent": "greeting", "confidence": 0.7992632409675284, "entities": {}, "context": null}
+2025-04-07 16:24:57,445 - INFO - {"timestamp": "2025-04-07T16:24:57.445337", "user_input": "my name is john", "intent": "user_name", "confidence": 0.7542762132189864, "entities": {}, "context": null}
+2025-04-07 16:25:34,667 - INFO - {"timestamp": "2025-04-07T16:25:34.667287", "user_input": "what is today's date?", "intent": "date", "confidence": 0.99999998033011, "entities": {}, "context": null}
+2025-04-07 16:25:39,835 - INFO - {"timestamp": "2025-04-07T16:25:39.834940", "user_input": "what is the time", "intent": "time", "confidence": 0.9999620274460626, "entities": {}, "context": null}
+2025-04-07 16:26:42,363 - INFO - {"timestamp": "2025-04-07T16:26:42.362909", "user_input": "what is the weather in toronto?", "intent": "weather", "confidence": 0.9932019238708867, "entities": {"location": ["Toronto", "toronto ?", "in toronto"]}, "context": null}
+2025-04-07 16:27:01,005 - INFO - {"timestamp": "2025-04-07T16:27:01.005567", "user_input": "what is the weather in canada", "intent": "weather", "confidence": 0.9932019238708867, "entities": {"location": ["Canada", "canada", "in canada"]}, "context": null}
+2025-04-07 16:27:15,049 - INFO - {"timestamp": "2025-04-07T16:27:15.049688", "user_input": "define truth", "intent": "definition", "confidence": 0.9965655817469015, "entities": {}, "context": null}

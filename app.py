@@ -438,13 +438,19 @@ class EnhancedChatbot:
         if os.path.exists(model_path):
             try:
                 self.nn.load_model(model_path)
-                # Validate model architecture
-                if self.nn.layer_sizes == self.layer_sizes:
-                    return
+                # Validate model architecture matches current vocabulary size
+                expected_input_size = len(self.processor.vocabulary) + len(self.processor.bigram_vocab)
+                if self.nn.layer_sizes[0] != expected_input_size:
+                    print(f"Model input size ({self.nn.layer_sizes[0]}) doesn't match current vocabulary size ({expected_input_size}). Retraining...")
+                    self.train_model(epochs=50)
+                return
             except Exception as e:
                 logging.error(f"Error loading model: {e}")
                 # Train only if necessary
                 self.train_model(epochs=50)
+        else:
+            # Train model if not found
+            self.train_model(epochs=50)
         
     def _build_vocabulary(self):
         """Build vocabulary consistently"""
@@ -458,7 +464,7 @@ class EnhancedChatbot:
             'bigrams': self.processor.bigram_vocab,
             'timestamp': datetime.now().isoformat()
         }
-        with open('vocabulary_metadata.pkl', 'wb') as f:
+        with open('vocabulary.pkl', 'wb') as f:
             pickle.dump(vocab_metadata, f)
 
     def _initialize_network(self):
