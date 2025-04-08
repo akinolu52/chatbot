@@ -78,6 +78,9 @@ language_mapping = {
     'Telugu': 'te',
 }
 
+vocab_path = 'vocabulary.pkl'
+model_path = 'chatbot_model.pkl'
+
 # Set up logging
 logging.basicConfig(filename='bot.log', level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -88,7 +91,7 @@ with open('intents.json') as f:
 intents_list = list(intents.keys())
 
 class VocabularyManager:
-    def __init__(self, vocab_path='vocabulary.pkl'):
+    def __init__(self):
         self.vocab_path = vocab_path
         self.vocabulary = {'unigrams': [], 'bigrams': []}
         self.timestamp = None
@@ -124,7 +127,6 @@ class NeuralNetwork:
     """Neural Network for intent classification with improved architecture"""
     def __init__(self, layer_sizes=None, input_size=None):
         if layer_sizes is None:
-            # layer_sizes = [100, 64, 32, len(intents_list)]
             layer_sizes = [input_size, 64, 32, len(intents_list)]
         self.layer_sizes = layer_sizes
         self.weights = []
@@ -405,8 +407,6 @@ class EnhancedChatbot:
         
     def load_or_build_vocabulary(self):
         """Load existing vocabulary or build new one"""
-        vocab_path = 'vocabulary.pkl'
-        
         if os.path.exists(vocab_path):
             try:
                 with open(vocab_path, 'rb') as f:
@@ -432,9 +432,7 @@ class EnhancedChatbot:
         return False
 
     def _load_or_train_model(self):
-        """Smart model loading/training"""
-        model_path = 'chatbot_model.pkl'
-        
+        """Model loading/training"""
         if os.path.exists(model_path):
             try:
                 self.nn.load_model(model_path)
@@ -464,7 +462,7 @@ class EnhancedChatbot:
             'bigrams': self.processor.bigram_vocab,
             'timestamp': datetime.now().isoformat()
         }
-        with open('vocabulary.pkl', 'wb') as f:
+        with open(vocab_path, 'wb') as f:
             pickle.dump(vocab_metadata, f)
 
     def _initialize_network(self):
@@ -549,7 +547,7 @@ class EnhancedChatbot:
             if avg_loss < best_loss:
                 best_loss = avg_loss
                 patience_counter = 0
-                self.nn.save_model('chatbot_model.pkl')  # Save best model
+                self.nn.save_model(model_path)  # Save best model
             else:
                 patience_counter += 1
                 if patience_counter >= patience:
